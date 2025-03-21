@@ -15,12 +15,12 @@ func Substract(a float64, b float64) float64 {
 }
 
 func Multiply(numbers ...float64) (float64, error) {
-	var mul float64 = 0
+	var mul float64 = 1.0
 	if len(numbers) == 0 {
 		return 0, fmt.Errorf("no numbers provided")
 	}
 	for _, value := range numbers {
-		mul *= value
+		mul = mul * value
 	}
 	return mul, nil
 }
