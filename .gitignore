@@ -1,0 +1,8 @@
+# Ignore Go build files
+bin/
+pkg/
+*.exe
+*.out
+
+# Ignore module cache
+go.sum
