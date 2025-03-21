@@ -14,7 +14,7 @@ func TestAdd(t *testing.T) {
 
 func TestSubstract(t *testing.T) {
 	result := Substract(6, 4)
-	expected := 3.0
+	expected := 2.0
 	if expected != result {
 		t.Errorf("Substract(6, 4) = %v; want %v", result, expected)
 	}
